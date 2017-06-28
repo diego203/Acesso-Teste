@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.diego.acesso_teste.LoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/txtCPF"
+        android:hint="@string/CPF"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPassword"
+        android:hint="@string/Password"
+        android:layout_below="@id/txtCPF"
+        android:layout_margin="@dimen/margin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ok"
+        android:id="@+id/btnOk"
+        android:layout_below="@+id/txtPassword"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

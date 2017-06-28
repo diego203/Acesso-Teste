@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diego.acesso_teste.DetailMovie">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Movie name"
+            android:id="@+id/txtMovieName"
+            android:layout_toRightOf="@id/imgPoster"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie year"
+            android:id="@+id/txtMovieYear"
+            android:layout_toRightOf="@id/imgPoster"
+            android:layout_below="@id/txtMovieName"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie duration"
+            android:id="@+id/txtMovieDuration"
+            android:layout_toRightOf="@id/imgPoster"
+            android:layout_below="@id/txtMovieYear"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie genre"
+            android:id="@+id/txtMovieGenre"
+            android:layout_toRightOf="@id/imgPoster"
+            android:layout_below="@id/txtMovieDuration"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie plot"
+            android:id="@+id/txtMoviePlot"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/imgPoster"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
